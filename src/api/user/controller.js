@@ -1,10 +1,5 @@
 import _ from 'lodash';
 import { success, notFound } from '../../services/response/';
-import { sendMail } from '../../services/sendgrid';
-import crypto from 'crypto-random-string';
-import { uid } from 'rand-token';
-import * as s3 from '../../services/s3';
-import Image from '../../services/image';
 import { User } from '.';
 
 export const index = ({ querymen: { query, select, cursor } }, res, next) =>
